@@ -109,12 +109,12 @@ body {
 
 .animais-lista::-webkit-scrollbar-thumb {
   background: #5D6850;
-  border-left: 4px solid #faf6ed;
-  border-right: 4px solid #faf6ed;
+  border-left: 4px solid #EFEFE6;
+  border-right: 4px solid #EFEFE6;
 }
 
 .animais-lista::-webkit-scrollbar-track {
-  background: #faf6ed;
+  background: #EFEFE6;
 }
 
 .animais-descricao {
@@ -291,4 +291,19 @@ body {
 [data-anime="scroll"].ativo {
   opacity: 1;
   transition: .3s;
+}
+
+[data-semana]::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #E54;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+
+[data-semana].aberto::after{
+  background: #3f4;
 }
